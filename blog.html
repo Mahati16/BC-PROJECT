@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Kanun - Law Firm Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Law Firm Website Template" name="keywords">
+        <meta content="Law Firm Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <script>
+            function toggleReadMore1() {
+                var additionalContent1 = document.getElementById("additionalContent1");
+                
+                if (additionalContent1.style.display === "none") {
+                    additionalContent1.style.display = "block"; // Change to "inline" or "flex" if appropriate
+                } else {
+                    additionalContent1.style.display = "none";
+                }
+
+                var additionalContent2 = document.getElementById("additionalContent2");
+                
+                if (additionalContent2.style.display === "none") {
+                    additionalContent2.style.display = "block"; // Change to "inline" or "flex" if appropriate
+                } else {
+                    additionalContent2.style.display = "none";
+                }
+            }
+            function toggleReadMore2() {
+
+                var additionalContent2 = document.getElementById("additionalContent2");
+                
+                if (additionalContent2.style.display === "none") {
+                    additionalContent2.style.display = "block"; // Change to "inline" or "flex" if appropriate
+                } else {
+                    additionalContent2.style.display = "none";
+                }
+            }
+            function toggleReadMore3() {    
+                var additionalContent3 = document.getElementById("additionalContent3");
+                    if (additionalContent3.style.display === "none") {
+                    additionalContent3.style.display = "block"; // Change to "inline" or "flex" if appropriate
+                    } else {
+                    additionalContent3.style.display = "none";
+                }
+            }
+            function toggleReadMore4() {    
+                var additionalContent4 = document.getElementById("additionalContent4");
+                    if (additionalContent4.style.display === "none") {
+                    additionalContent4.style.display = "block"; // Change to "inline" or "flex" if appropriate
+                    } else {
+                    additionalContent4.style.display = "none";
+                }
+            }
+            function toggleReadMore5() {    
+                var additionalContent5 = document.getElementById("additionalContent5");
+                    if (additionalContent5.style.display === "none") {
+                    additionalContent5.style.display = "block"; // Change to "inline" or "flex" if appropriate
+                    } else {
+                    additionalContent5.style.display = "none";
+                }
+            }
+            function toggleReadMore6() {    
+                var additionalContent6 = document.getElementById("additionalContent6");
+                    if (additionalContent6.style.display === "none") {
+                    additionalContent6.style.display = "block"; // Change to "inline" or "flex" if appropriate
+                    } else {
+                    additionalContent6.style.display = "none";
+                }
+            }
+            </script>
+        <style>
+            /* General Styles */
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header */
+.page-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.page-header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+/* Navigation */
+.nav-bar {
+    background-color: #333;
+}
+
+.navbar-brand,
+.navbar-nav .nav-item .nav-link {
+    color: #fff !important;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+/* Blog Section */
+.blog {
+    padding: 50px 0;
+}
+
+.blog-item {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.blog-item h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.blog-item p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#additionalContent1,
+#additionalContent2,
+#additionalContent3,
+#additionalContent4,
+#additionalContent5,
+#additionalContent6 {
+    display: none;
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin: 0 0 20px 0;
+    font-size: 36px;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #f4f4f4;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-about p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-link h2,
+.footer-contact h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-link a {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-menu {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+.f-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.f-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Back to Top */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #333;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+            <!-- Nav Bar Start -->
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="My Project.html" class="nav-item nav-link">Profile</a>
+                                <a href="home.html" class="nav-item nav-link">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="blog.html" class="nav-item nav-link">Blogs</a>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            </div>
+                            <div class="ml-auto">
+                                <a class="btn" href="">Get Appointment</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Nav Bar End -->
+            
+            
+            <!-- Page Header Start -->
+            <div class="page-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Our Blog</h2>
+                        </div>
+                        <div class="col-12">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+
+
+            <!-- Blog Start -->
+            <div class="blog">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Latest From Blog</h2>
+                    </div>
+                    <div class="row blog-page">
+                        <div class="col-lg-4 col-md-6 blog-item">
+                            <img src="c:\Users\Mahati\Downloads\nirbhayacase.jpg" alt="Blog" width="300" height="200">
+                            <h3>The Nirbhaya gang-rape (2012)</h3>
+                            <!-- <div class="meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Civil Law</a>
+                                <i class="fa fa-calendar-alt"></i>
+                            </div> -->
+                            <p>
+                                This is a case that sparked widespread protests and triggered changes in major rape laws in India. 
+                            </p>
+                            <!-- <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            <p>This is a brief overview of the content.</p> -->
+                                <div id="additionalContent1" style="display: none;">
+                                <!-- Additional content here -->
+                                <p> The gruesome and horrifying gang rape of Jyoti Singh also called Nirbhaya or the Unafraid, brought the entire youth of India to the streets. Instead of victim shaming, the people of India screamed her name as it had become a source of strength in the face of the fear of the unsafe nature of the Delhi streets. Women and the youth week seemed to have enough and were poised to fight for their rights. After a long legal battle, the accused were finally hanged in the Tihar Jail in the March of 2020.
+                                    The changes made in the rape law were substantial. A committee was set up under a former judge of the Supreme Court, J.S. Verma to suggest amendments in the criminal law. The report found that crimes against women were directly linked to failures of the government and the police. The major suggestions of the report were to make rape punishable by life sentence instead of death as it had been seen that the death sentence did not act as a deterrent and cleared ambiguity over the control of the Delhi police in such cases. The committee, however, did not favour setting the official age of a juvenile at sixteen rather than eighteen.
+                                    For starters, through the Criminal Law Amendment Act, 2013 the definition of rape was changed in Section 375 to include the insertion of any object in the vagina or rectum of a woman.  Further, The punishment for rape is seven years at the least and may extend up to life imprisonment (Section 376). Any man, be it a police officer, medical officer, army personnel, jail officer, public officer or public servant, who commits rape may be imprisoned for at least ten years (Section 376). A punishment of life imprisonment, extending to death, was prescribed for situations wherein the rape concludes with the death of the victim, or the victim being in a vegetative state (Section 376-A). Gang rape has been prescribed punishment of at least twenty years under the newly amended sections (Section 376-D). The new amendment also defined ‘consent’ to mean an unequivocal agreement to engage in a particular sexual act; clarifying further that the absence of resistance will not imply consent.</p>
+                                </div>
+                                <a href="#" onclick="toggleReadMore1()">Read More</a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 blog-item">
+                            <img src="c:\Users\Mahati\Downloads\hmscam.png" alt="Blog" width="300" height="200">
+                            <h3>The Harsha Mehta scam</h3>
+                            <!-- <div class="meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Family Law</a>
+                                <i class="fa fa-calendar-alt"></i>
+                                
+                            </div> -->
+                            <p>
+                                Any article on controversial crimes would be incomplete without India’s biggest cases of scams.
+                            </p>
+                
+                            
+                            <div id="additionalContent2" style="display: none;">
+                                <!-- Additional content here -->
+                                <p>One of the notable lawyers who played a crucial role in handling aspects of this case was Ram Jethmalani. Harshad Mehta was a stockbroker who was one of the primary stock manipulators of the Bombay Stock Exchange, commonly known as the 1992 Indian stock market scam. When the scam came to light, the entire stock market collapsed. The securities scandal involved the transfer of Rs 3,500 crore in bank cash to a gang of stockbrokers led by Harshad Mehta. This money was subsequently invested strategically in the stock market, enabling it to soar to almost 4,500 points. Mehta came to be known as the ‘Big Bull’ and gullible investors followed his lead.  Sucheta Dalal, an experienced journalist, was the first to uncover it in April 1992.
+                                    Harshad Mehta owed the State Bank of India Rs. 500 crores after it discovered it was hanging onto worthless bank receipts. By the end of April 1992, he was accused of diverting money from the public sector company, Maruti Udyog Limited (MUL) to his accounts. A full-fledged committee, the Janakiraman Committee, was established by the RBI to probe into the details of the scam. Mehta was convicted by both the Bombay High Court and the Supreme Court and charged with 74 criminal offences. His legal battles dragged on until 2001 when he passed away in jail from a cardiac arrest.</p>
+                            </div>
+                            <a href="#" onclick="toggleReadMore2()">Read More</a>
+
+
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 blog-item">
+                            <img src="c:\Users\Mahati\Downloads\niravmodiscam.png"  alt="Blog" width="300" height="200">
+                            <h3>PNB Bank, Nirav Modi, Mehul Choksi</h3>
+                            <!-- <div class="meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Business Law</a>
+                                <i class="fa fa-calendar-alt"></i>
+                                
+                            </div> -->
+                            <p>
+                                A more recent case of bank fraud that made headlines and almost ruined the second-largest state-run bank was the Punjab National Bank (PNB) scam case.
+                            </p>
+                            <div id="additionalContent3" style="display: none;">
+                                <!-- Additional content here -->
+                                <p> This scam included Indian diamantaire Nirav Modi, his uncle Mehul Choksi and two top PCB officials. The  PNB filed a case with the CBI in 2018 accusing Nirav Modi and his firms of getting Letters of Undertaking (LoUs) from PNB without paying the margin amount on loans. This meant that if those companies defaulted on the loan, PNB would be responsible for the repayment. The fraud’s discovery not only exposed PNB’s management flaws but also shattered faith in India’s state-run banking system, which controls more than two-thirds of the country’s bank assets.</p>
+                            </div>
+                            <a href="#" onclick="toggleReadMore3()">Read More</a>
+                            
+                        </div>
+                        <div class="col-lg-4 col-md-6 blog-item">
+                            <img src="c:\Users\Mahati\Downloads\lalbiharicase.jpg" alt="Blog" width="300" height="200">
+                            <h3>Lal Bihari identity case (1975-1994)</h3>
+                            <!-- <div class="meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Education Law</a>
+                                <i class="fa fa-calendar-alt"></i>
+                            </div> -->
+                            <p>
+                                Lal Bihari was born in 1955, died between 1975 and 1994, and has been an activist since then.
+                            </p>
+                            <div id="additionalContent4" style="display: none;">
+                                <!-- Additional content here -->
+                                <p> His uncle bribed government officials to declare him dead so that he might receive their ancestral land, and Mr Lal Bihari was officially declared dead. He began his battle against the Indian bureaucracy to establish that he was still alive after he discovered what had happened. Meanwhile, he staged a sham burial, demanded widow’s pay for his wife, ran against Rajiv Gandhi in the 1989 election, and even added a ‘Mritak’ to his name. He is currently the director of an organisation that seeks to deal with similar identity situations for others who have lost theirs.</p>
+                            </div>
+                            <a href="#" onclick="toggleReadMore4()">Read More</a>
+                            
+                        </div>
+                        <div class="col-lg-4 col-md-6 blog-item">
+                            <img src="c:\Users\Mahati\Downloads\ayodhya.jpeg" alt="Blog" width="300" height="200">
+                            <h3>Ayodhya Disputes</h3>
+                            <!-- <div class="meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Criminal Law</a>
+                                <i class="fa fa-calendar-alt"></i>
+                                <p>01-Jan-2045</p>
+                            </div> -->
+                            <p>
+                                The Ayodhya dispute was a long-standing legal and religious conflict in India centered around a piece of land in Ayodhya, Uttar Pradesh. 
+                            </p>
+                            
+                            <div id="additionalContent5" style="display: none;">
+                                <!-- Additional content here -->
+                                <p> This dispute primarily involved a structure known as the Babri Masjid (mosque) and a site considered by Hindus to be the birthplace of Lord Ram.The conflict dates back centuries, but it escalated significantly in the 20th century. In 1992, a large group of Hindu activists demolished the Babri Masjid, leading to widespread communal tensions and riots across the country.
+                                    Numerous legal battles followed, seeking to determine the rightful ownership of the disputed land. The case reached the Indian courts, and it went through various legal proceedings in different courts over many years.
+                                    In November 2019, the Supreme Court of India delivered a landmark judgment on the Ayodhya dispute. The court's verdict allocated the disputed site to Hindu parties for the construction of a Ram temple and also directed the allocation of an alternative piece of land to the Muslim parties for the construction of a mosque.
+                                    The court's decision aimed to resolve the decades-long dispute, emphasizing a legal conclusion to the issue in an effort to promote communal harmony and peace among different religious communities in India. The judgment was significant in seeking a resolution to a highly contentious issue that had been a source of division and conflict for a prolonged period in Indian society.</p>
+                            </div>
+                            <a href="#" onclick="toggleReadMore5()">Read More</a>
+                            
+                        </div>
+                        <div class="col-lg-4 col-md-6 blog-item">
+                            <img src="c:\Users\Mahati\Downloads\State of Orissa v. Ram Bahadur Thapa (1959).jpeg" alt="Blog" width="300" height="200">
+                            <h3>State of Orissa v. Ram Bahadur Thapa (1959)</h3>
+                            <!-- <div class="meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Cyber Law</a>
+                                <i class="fa fa-calendar-alt"></i>
+                                <p>01-Jan-2045</p>
+                            </div> -->
+                            <p>
+                                This is a bizarre one. Ram Bahadur Thapa was the servant of one J.B. Chatterjee of Chatterjee Bros. firm in Calcutta.
+                            </p>
+                            <div id="additionalContent6" style="display: none;">
+                                <!-- Additional content here -->
+                                <p> The case of State of Orissa v. Ram Bahadur Thapa (1959) involves a legal issue related to the defense of private defense or self-defense under the Indian Penal Code (IPC). In this case, Ram Bahadur Thapa was charged with the murder of another person.
+                                    The central question before the court was whether Thapa's actions constituted murder or if they were justified as an act of self-defense according to the provisions of private defense under Section 96 to Section 106 of the IPC.
+                                    The court analyzed the circumstances surrounding the incident, including the threat perceived by Thapa, the nature of the attack he faced, and whether his response was proportional and necessary to defend himself.
+                                    Ultimately, the court ruled that Thapa's actions exceeded the bounds of self-defense. It held that while an individual has the right to defend themselves, the force used must be reasonable and proportionate to the threat faced. In this case, the court found that Thapa's response went beyond self-defense and amounted to an offense, resulting in his conviction for the offense of murder under the IPC.</p>
+                            </div>
+                            <a href="#" onclick="toggleReadMore6()">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog End -->
+
+
+            <!-- Newsletter Start -->
+            <div class="newsletter">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Subscribe Our Website</h2>
+                    </div>
+                    <div class="form">
+                        <input class="form-control" placeholder="Email here">
+                        <button class="btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Newsletter End -->
+
+
+            <!-- Footer Start -->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-about">
+                                <h2>About Us</h2>
+                                <p>
+                                    Our seasoned team of lawyers is dedicated to navigating the intricacies of the law on your behalf. With a client-centric approach, we prioritize your needs, ensuring clear communication and personalized strategies.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-8">
+                            <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-link">
+                                <h2>Services Areas</h2>
+                                <a href="">Civil Law</a>
+                                <a href="">Family Law</a>
+                                <a href="">Business Law</a>
+                                <a href="">Education Law</a>
+                                <a href="">Immigration Law</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-link">
+                                <h2>Useful Pages</h2>
+                                <a href="">About Us</a>
+                                <a href="">Case Studies</a>
+                                <a href="">FAQs</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-contact">
+                                <h2>Get In Touch</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>B21, Sector 12, Delhi , India</p>
+                                <p><i class="fa fa-phone-alt"></i>+91-9876543210</p>
+                                <p><i class="fa fa-envelope"></i>lawfirm@example.com</p>
+                                <div class="footer-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="">Terms of use</a>
+                        <a href="">Privacy policy</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+            
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

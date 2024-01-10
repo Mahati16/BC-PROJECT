@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Kanun - Law Firm Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Law Firm Website Template" name="keywords">
+        <meta content="Law Firm Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar Styles */
+.nav-bar {
+    background-color: #343a40;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107; /* Change the color on hover as needed */
+}
+
+.btn {
+    background-color: #ffc107;
+    color: #343a40;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffca2c; /* Change the color on hover as needed */
+}
+
+/* Page Header Styles */
+.page-header {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+}
+
+.page-header h2 {
+    font-size: 36px;
+    color: #343a40;
+    font-weight: bold;
+}
+
+.page-header a {
+    color: #343a40;
+    text-decoration: none;
+}
+
+.page-header a:hover {
+    color: #ffc107; /* Change the color on hover as needed */
+}
+
+/* Portfolio Styles */
+.portfolio {
+    padding: 60px 0;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    color: #343a40;
+    font-weight: bold;
+}
+
+#portfolio-flters {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 15px 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #343a40;
+    transition: color 0.3s ease;
+}
+
+#portfolio-flters li:hover {
+    color: #ffc107; /* Change the color on hover as needed */
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.portfolio-wrap img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.portfolio-wrap figure {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-wrap:hover figure {
+    opacity: 1;
+}
+
+.portfolio-wrap figure p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.portfolio-wrap figure a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.portfolio-wrap figure a:hover {
+    text-decoration: underline;
+}
+
+/* Newsletter Styles */
+.newsletter {
+    background-color: #343a40;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.newsletter h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.btn {
+    background-color: #ffc107;
+    color: #343a40;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffca2c; /* Change the color on hover as needed */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #343a40;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.footer h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-about p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-link h2,
+.footer-contact h2 {
+    font-size: 20px;
+}
+
+.footer-link a {
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.footer-link a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact p {
+    margin-bottom: 5px;
+}
+
+.footer-social a {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-menu {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.f-menu a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.f-menu a:hover {
+    color: #ffc107; /* Change the color on hover as needed */
+}
+
+.copyright p {
+    font-size: 14px;
+}
+
+/* Back to Top Button Styles */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #343a40;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.back-to-top:hover {
+    background-color: #ffc107; /* Change the color on hover as needed */
+}
+
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+            <!-- Nav Bar Start -->
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="My Project.html" class="nav-item nav-link">Profile</a>
+                                <a href="home.html" class="nav-item nav-link">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="portfolio.html" class="nav-item nav-link active">Case Studies</a>
+                                <a href="blog.html" class="nav-item nav-link">Blogs</a>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            </div>
+                            <div class="ml-auto">
+                                <a class="btn" href="">Get Appointment</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Nav Bar End -->
+            
+            
+            <!-- Page Header Start -->
+            <div class="page-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Case Studies</h2>
+                        </div>
+                        <div class="col-12">
+                            <a href="">Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+
+
+            <!-- Portfolio Start -->
+            <div class="portfolio">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Our Case Studies</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <ul id="portfolio-flters">
+                                <li data-filter="*" class="filter-active">All</li>
+                                <li data-filter=".first">Civil</li>
+                                <li data-filter=".second">Criminal</li>
+                                <li data-filter=".third">Business</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row portfolio-container">
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first">
+                            <div class="portfolio-wrap">
+                                <img src="C:\Users\Mahati\AppData\Local\Temp\88d725e8-4312-43cb-a73e-e0b62209cd30_KANUN Free Website Template - Free-CSS.html.zip.d30\law-firm-website-template\img\portfolio-1.jpg" alt="Portfolio Image">
+                                <figure>
+                                    <p>Crime</p>
+                                    <a href="#">Murder Case</a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second">
+                            <div class="portfolio-wrap">
+                                <img src="C:\Users\Mahati\AppData\Local\Temp\831ba886-31ce-453c-a2de-cb579c38e072_KANUN Free Website Template - Free-CSS.html.zip.072\law-firm-website-template\img\portfolio-2.jpg" alt="Portfolio Image">
+                                <figure>
+                                    <p>Politics</p>
+                                    <a href="#">Political Case</a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item third">
+                            <div class="portfolio-wrap">
+                                <img src="C:\Users\Mahati\AppData\Local\Temp\58da19f8-df2e-4f2f-8df7-59d5351b35c4_KANUN Free Website Template - Free-CSS.html.zip.5c4\law-firm-website-template\img\portfolio-3.jpg" alt="Portfolio Image">
+                                <figure>
+                                    <p>Family</p>
+                                    <a href="#">Divorce Case</a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first">
+                            <div class="portfolio-wrap">
+                                <img src="C:\Users\Mahati\AppData\Local\Temp\1335a0a9-8bbf-43a8-a3a0-94f05adcaef1_KANUN Free Website Template - Free-CSS.html.zip.ef1\law-firm-website-template\img\portfolio-4.jpg" alt="Portfolio Image">
+                                <figure>
+                                    <p>Finance</p>
+                                    <a href="#">Money Laundering</a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second">
+                            <div class="portfolio-wrap">
+                                <img src="C:\Users\Mahati\AppData\Local\Temp\9fa630b9-ede2-49a0-92cf-70906bc64ef7_KANUN Free Website Template - Free-CSS.html.zip.ef7\law-firm-website-template\img\portfolio-5.jpg" alt="Portfolio Image">
+                                <figure>
+                                    <p>Business</p>
+                                    <a href="#">Weber & Partners</a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item third">
+                            <div class="portfolio-wrap">
+                                <img src="C:\Users\Mahati\AppData\Local\Temp\86431f7a-95a0-4a07-af04-5a3ab25224d5_KANUN Free Website Template - Free-CSS.html.zip.4d5\law-firm-website-template\img\portfolio-6.jpg" alt="Portfolio Image">
+                                <figure>
+                                    <p>Finance</p>
+                                    <a href="#">Property Sharing Case</a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Start -->
+
+
+            <!-- Newsletter Start -->
+            <div class="newsletter">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Subscribe Our Website</h2>
+                    </div>
+                    <div class="form">
+                        <input class="form-control" placeholder="Email here">
+                        <button class="btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Newsletter End -->
+
+
+            <!-- Footer Start -->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-about">
+                                <h2>About Us</h2>
+                                <p>
+                                    Our seasoned team of lawyers is dedicated to navigating the intricacies of the law on your behalf. With a client-centric approach, we prioritize your needs, ensuring clear communication and personalized strategies.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-8">
+                            <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-link">
+                                <h2>Services Areas</h2>
+                                <a href="">Civil Law</a>
+                                <a href="">Family Law</a>
+                                <a href="">Business Law</a>
+                                <a href="">Education Law</a>
+                                <a href="">Immigration Law</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-link">
+                                <h2>Useful Pages</h2>
+                                <a href="">About Us</a>
+                                <a href="">Case Studies</a>
+                                <a href="">FAQs</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-contact">
+                                <h2>Get In Touch</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>B21, Sector 12, Delhi , India</p>
+                                <p><i class="fa fa-phone-alt"></i>+91-9876543210</p>
+                                <p><i class="fa fa-envelope"></i>lawfirm@example.com</p>
+                                <div class="footer-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="">Terms of use</a>
+                        <a href="">Privacy policy</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+             </div>
+            </div>
+            <!-- Footer End -->
+            
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Kanun - Law Firm Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Law Firm Website Template" name="keywords">
+        <meta content="Law Firm Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            /* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Global Styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.nav-bar {
+    background: #343a40;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #fff !important;
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+.nav-item a {
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-item a:hover {
+    color: #dc3545;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* Team Section Styles */
+.team {
+    padding: 80px 0;
+}
+
+.team-item {
+    background: #fff;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+.team-img img {
+    width: 100%;
+    border-bottom: 2px solid #dc3545;
+}
+
+.team-text {
+    padding: 20px;
+}
+
+.team-text h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.team-text p {
+    font-size: 14px;
+    color: #777;
+}
+
+.team-social a {
+    font-size: 18px;
+    margin: 0 5px;
+    color: #343a40;
+    transition: 0.3s;
+}
+
+.team-social a:hover {
+    color: #dc3545;
+}
+
+/* Newsletter Section Styles */
+.newsletter {
+    background: #343a40;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.newsletter h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-control {
+    flex: 2;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btn {
+    flex: 1;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Footer Section Styles */
+.footer {
+    background: #343a40;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.footer-about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-about p {
+    font-size: 14px;
+}
+
+.footer-link h2,
+.footer-contact h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-link a {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.footer-link a:hover {
+    color: #dc3545;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #dc3545;
+}
+
+.footer-menu {
+    background: #292b2c;
+    padding: 10px 0;
+}
+
+.f-menu a {
+    color: #fff;
+    margin-right: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.f-menu a:hover {
+    color: #dc3545;
+}
+
+.copyright {
+    background: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Back to Top Button Styles */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    background: #dc3545;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s;
+}
+
+.back-to-top:hover {
+    background: #292b2c;
+}
+
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- Nav Bar Start -->
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="My Project.html" class="nav-item nav-link">Profile</a>
+                                <a href="home.html" class="nav-item nav-link">Home</a>
+                                <a href="about.html" class="nav-item nav-link active">About</a>
+                                <a href="blog.html" class="nav-item nav-link">Blogs</a>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            </div>
+                            <div class="ml-auto">
+                                <a class="btn" href="">Get Appointment</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Nav Bar End -->
+            
+            <!-- Team Start -->
+            <div class="team">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Meet Our Expert </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="c:\Users\Mahati\Downloads\team-1.jpg" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Aman Singh</h2>
+                                    <p><b>Business Consultant</b></p>
+                                    <div class="team-social">
+                                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="c:\Users\Mahati\Downloads\team-2.jpg" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Mahesh Shetty</h2>
+                                    <p><b>Criminal Consultant</b></p>
+                                    <div class="team-social">
+                                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="c:\Users\Mahati\Downloads\team-3.jpg" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Shravani Jadhav</h2>
+                                    <p><b>Divorce Consultant</b></p>
+                                    <div class="team-social">
+                                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="c:\Users\Mahati\Downloads\team-4.jpg" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Arun Nair</h2>
+                                    <p><b>Immigration Consultant</b></p>
+                                    <div class="team-social">
+                                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Team End -->
+
+
+            <!-- Newsletter Start -->
+            <div class="newsletter">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Subscribe Our Website</h2>
+                    </div>
+                    <div class="form">
+                        <input class="form-control" placeholder="Email here">
+                        <button class="btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Newsletter End -->
+
+
+            <!-- Footer Start -->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-about">
+                                <h2>About Us</h2>
+                                <p>
+                                    Our seasoned team of lawyers is dedicated to navigating the intricacies of the law on your behalf. With a client-centric approach, we prioritize your needs, ensuring clear communication and personalized strategies.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-8">
+                            <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-link">
+                                <h2>Services Areas</h2>
+                                <a href="">Civil Law</a>
+                                <a href="">Family Law</a>
+                                <a href="">Business Law</a>
+                                <a href="">Education Law</a>
+                                <a href="">Immigration Law</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-link">
+                                <h2>Useful Pages</h2>
+                                <a href="">About</a>
+                                <a href="">Case Studies</a>
+                                <a href="">FAQs</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-contact">
+                                <h2>Get In Touch</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>B21, Sector 12, Delhi , India</p>
+                                <p><i class="fa fa-phone-alt"></i>+91-9876543210</p>
+                                <p><i class="fa fa-envelope"></i>lawfirm@example.com</p>
+                                <div class="footer-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="">Terms of use</a>
+                        <a href="">Privacy policy</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>                
+                </div>
+            </div>
+            <!-- Footer End -->
+            
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
